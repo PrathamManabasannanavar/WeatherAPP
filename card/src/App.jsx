@@ -1,7 +1,7 @@
 
 import CardComponent from "./cards.jsx"
 import "./styles/App.css"
-import jsonData from "../public/Profile.json"
+import jsonData from "./assets/Profile.json"
 
 function App() {
   return (
