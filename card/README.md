@@ -8,3 +8,4 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 - This page consists of a simple cards showcasing the reusability characteristics of the Reactjs using a JSON file to display the profiles of the developers
+- <a href="https://prathammanabasannanavar.github.io/React-Projects/">Click here for Website</a>
