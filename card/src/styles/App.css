@@ -1,0 +1,4 @@
+#CardBox{
+  display: flex;
+  flex-wrap: wrap; /* go to new line after minimizing */
+}
