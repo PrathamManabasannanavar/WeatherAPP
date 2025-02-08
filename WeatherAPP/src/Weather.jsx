@@ -17,7 +17,7 @@ function WeatherComponent({ country }) {
             setLoading(true)
             console.log("hi");
             if (country != "") {
-                let tempData = await fetch(`http://api.weatherapi.com/v1/current.json?key=83e21f410d9542b6a5554847250602&q=${country}&aqi=no`)
+                let tempData = await fetch(`https://api.weatherapi.com/v1/current.json?key=83e21f410d9542b6a5554847250602&q=${country}&aqi=no`)
                     .then((resp) => {
                         if (resp.status == 200) {
                             return resp.json()
@@ -49,6 +49,7 @@ function WeatherComponent({ country }) {
     // console.log("Hi");
 
     if (country == "") {
+        document.body.style.backgroundImage = `url(${defaultImage})`
         return (
             <div className="typeSomething">
                 Type Something...
@@ -101,11 +102,10 @@ function WeatherComponent({ country }) {
 
 
 function changeBackground(data) {
-    if (data == null){
+    if(data == null){
         document.body.style.backgroundImage = `url(${defaultImage})`
         return
     }
-
     let str = data.current.condition.text.toLowerCase();
     if(str.includes("cloud")){
         document.body.style.backgroundImage = `url(${cloudyImage})`
