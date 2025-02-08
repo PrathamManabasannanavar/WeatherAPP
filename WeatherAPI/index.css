@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url("src/assets/defaultImage2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;;
+    transition-duration: 2s;
+}
